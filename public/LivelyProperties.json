@@ -1,0 +1,378 @@
+{
+  "lblGroupInterface": {
+    "type": "label",
+    "value": "Nhóm 1: Giao Diện"
+  },
+  "showClock": {
+    "type": "checkbox",
+    "value": true,
+    "text": "Hiển thị đồng hồ trung tâm"
+  },
+  "clock24Hour": {
+    "type": "checkbox",
+    "value": true,
+    "text": "Định dạng 24 giờ"
+  },
+  "showTrackInfo": {
+    "type": "checkbox",
+    "value": true,
+    "text": "Hiển thị tên bài hát và ca sĩ"
+  },
+  "showAlbumArt": {
+    "type": "checkbox",
+    "value": true,
+    "text": "Hiển thị ảnh bìa album"
+  },
+  "showLyrics": {
+    "type": "checkbox",
+    "value": true,
+    "text": "Hiển thị lời bài hát"
+  },
+  "circleSize": {
+    "type": "slider",
+    "min": 55,
+    "max": 145,
+    "step": 5,
+    "value": 100,
+    "text": "Kích thước vòng tròn (%)"
+  },
+  "circleOffsetX": {
+    "type": "slider",
+    "min": -30,
+    "max": 30,
+    "step": 1,
+    "value": 0,
+    "text": "Vị trí ngang vòng tròn (%)"
+  },
+  "circleOffsetY": {
+    "type": "slider",
+    "min": -30,
+    "max": 30,
+    "step": 1,
+    "value": -4,
+    "text": "Vị trí dọc vòng tròn (%)"
+  },
+
+  "lblGroupEqualizer": {
+    "type": "label",
+    "value": "Nhóm 2: Equalizer"
+  },
+  "eqStyle": {
+    "type": "dropdown",
+    "value": 0,
+    "text": "Kiểu Equalizer",
+    "items": [
+      "Thanh tròn",
+      "Thanh vuông",
+      "Chấm LED",
+      "Đường sóng",
+      "Dạng gai"
+    ]
+  },
+  "barCount": {
+    "type": "slider",
+    "min": 32,
+    "max": 180,
+    "step": 4,
+    "value": 96,
+    "text": "Số lượng thanh"
+  },
+  "barWidth": {
+    "type": "slider",
+    "min": 2,
+    "max": 14,
+    "step": 1,
+    "value": 5,
+    "text": "Độ dày thanh (px)"
+  },
+  "barLength": {
+    "type": "slider",
+    "min": 40,
+    "max": 220,
+    "step": 5,
+    "value": 115,
+    "text": "Chiều dài thanh tối đa (px)"
+  },
+  "barDirection": {
+    "type": "dropdown",
+    "value": 0,
+    "text": "Hướng chuyển động",
+    "items": [
+      "Hướng ra ngoài",
+      "Hướng vào trong",
+      "Hai chiều"
+    ]
+  },
+  "rotationDirection": {
+    "type": "dropdown",
+    "value": 0,
+    "text": "Chiều xoay vòng tròn",
+    "items": [
+      "Theo chiều kim đồng hồ",
+      "Ngược chiều kim đồng hồ",
+      "Đứng yên"
+    ]
+  },
+  "rotationSpeed": {
+    "type": "slider",
+    "min": 0,
+    "max": 300,
+    "step": 5,
+    "value": 35,
+    "text": "Tốc độ xoay (%)"
+  },
+
+  "lblGroupColors": {
+    "type": "label",
+    "value": "Nhóm 3: Màu Sắc"
+  },
+  "palette": {
+    "type": "dropdown",
+    "value": 0,
+    "text": "Bảng màu",
+    "items": [
+      "Neon",
+      "Hoàng Hôn",
+      "Đại Dương",
+      "Đơn Sắc",
+      "Vaporwave",
+      "Ngọn Lửa",
+      "Rừng Xanh",
+      "Tự Chọn Màu"
+    ]
+  },
+  "customPrimaryColor": {
+    "type": "color",
+    "value": "#22D3EE",
+    "text": "Màu chính (khi chọn Tự Chọn Màu)"
+  },
+  "customSecondaryColor": {
+    "type": "color",
+    "value": "#EC4899",
+    "text": "Màu phụ (khi chọn Tự Chọn Màu)"
+  },
+
+  "lblGroupBackground": {
+    "type": "label",
+    "value": "Nhóm 4: Hình Nền"
+  },
+  "background": {
+    "type": "dropdown",
+    "value": 0,
+    "text": "Hình nền động",
+    "items": [
+      "Tinh vân vũ trụ",
+      "Thành phố về đêm",
+      "Bokeh nhiều màu",
+      "Cực quang (Aurora)",
+      "Gradient Neon",
+      "Nền tối tối giản",
+      "Hình nền cá nhân"
+    ]
+  },
+  "customBackgroundFile": {
+    "type": "file",
+    "value": "",
+    "text": "Chọn ảnh nền cá nhân",
+    "filter": "Image files (*.jpg;*.jpeg;*.png;*.webp)|*.jpg;*.jpeg;*.png;*.webp"
+  },
+  "bgBlur": {
+    "type": "slider",
+    "min": 0,
+    "max": 24,
+    "step": 1,
+    "value": 2,
+    "text": "Độ mờ hình nền (px)"
+  },
+  "bgDarkness": {
+    "type": "slider",
+    "min": 0,
+    "max": 90,
+    "step": 2,
+    "value": 38,
+    "text": "Độ tối lớp phủ (%)"
+  },
+  "bgGlow": {
+    "type": "slider",
+    "min": 0,
+    "max": 100,
+    "step": 5,
+    "value": 65,
+    "text": "Ánh sáng lan tỏa (%)"
+  },
+
+  "lblGroupEffects": {
+    "type": "label",
+    "value": "Nhóm 5: Hiệu Ứng"
+  },
+  "neonGlow": {
+    "type": "checkbox",
+    "value": true,
+    "text": "Ánh sáng Neon phát quang"
+  },
+  "particlesEnabled": {
+    "type": "checkbox",
+    "value": true,
+    "text": "Hạt ánh sáng chuyển động"
+  },
+  "particleDensity": {
+    "type": "slider",
+    "min": 20,
+    "max": 140,
+    "step": 4,
+    "value": 72,
+    "text": "Mật độ hạt ánh sáng"
+  },
+  "bassPulseEnabled": {
+    "type": "checkbox",
+    "value": true,
+    "text": "Hiệu ứng nhịp bass & sóng xung"
+  },
+  "flashEnabled": {
+    "type": "checkbox",
+    "value": false,
+    "text": "Hiệu ứng nhấp nháy theo trống"
+  },
+  "auroraOverlay": {
+    "type": "checkbox",
+    "value": true,
+    "text": "Lớp phủ cực quang"
+  },
+  "colorShift": {
+    "type": "checkbox",
+    "value": false,
+    "text": "Hiệu ứng chuyển màu động"
+  },
+  "autoQualityScale": {
+    "type": "checkbox",
+    "value": true,
+    "text": "Tự giảm hiệu ứng khi FPS thấp"
+  },
+
+  "lblGroupAudio": {
+    "type": "label",
+    "value": "Nhóm 6: Âm Thanh"
+  },
+  "sensitivity": {
+    "type": "slider",
+    "min": 30,
+    "max": 250,
+    "step": 5,
+    "value": 115,
+    "text": "Độ nhạy Equalizer (%)"
+  },
+  "bassGain": {
+    "type": "slider",
+    "min": 30,
+    "max": 250,
+    "step": 5,
+    "value": 125,
+    "text": "Độ khuếch đại Bass (%)"
+  },
+  "trebleGain": {
+    "type": "slider",
+    "min": 30,
+    "max": 250,
+    "step": 5,
+    "value": 105,
+    "text": "Độ khuếch đại Treble (%)"
+  },
+  "smoothness": {
+    "type": "slider",
+    "min": 10,
+    "max": 95,
+    "step": 3,
+    "value": 68,
+    "text": "Độ mượt (%)"
+  },
+  "fpsLimit": {
+    "type": "dropdown",
+    "value": 1,
+    "text": "Giới hạn FPS",
+    "items": [
+      "30 FPS",
+      "60 FPS"
+    ]
+  },
+  "updateRate": {
+    "type": "slider",
+    "min": 15,
+    "max": 60,
+    "step": 5,
+    "value": 60,
+    "text": "Tần số cập nhật (Hz)"
+  },
+
+  "lblGroupLyrics": {
+    "type": "label",
+    "value": "Nhóm 7: Lời Bài Hát"
+  },
+  "lyricsAutoShow": {
+    "type": "checkbox",
+    "value": true,
+    "text": "Tự động hiển thị lời bài hát"
+  },
+  "lyricsDisplayMode": {
+    "type": "dropdown",
+    "value": 0,
+    "text": "Chế độ hiển thị lời",
+    "items": [
+      "Hiển thị nhiều dòng",
+      "Chỉ hiển thị dòng hiện tại"
+    ]
+  },
+  "lyricsPosition": {
+    "type": "dropdown",
+    "value": 0,
+    "text": "Vị trí lời bài hát",
+    "items": [
+      "Phía dưới vòng tròn Equalizer",
+      "Bên dưới đồng hồ trung tâm",
+      "Khu vực riêng (góc trái)"
+    ]
+  },
+  "lyricsOffsetMs": {
+    "type": "slider",
+    "min": -5000,
+    "max": 5000,
+    "step": 100,
+    "value": 0,
+    "text": "Độ trễ đồng bộ (ms)"
+  },
+  "lyricsColor": {
+    "type": "color",
+    "value": "#F8FAFC",
+    "text": "Màu chữ lời bài hát"
+  },
+  "lyricsFontFamily": {
+    "type": "dropdown",
+    "value": 1,
+    "text": "Font chữ lời bài hát",
+    "items": [
+      "Outfit",
+      "Plus Jakarta Sans",
+      "JetBrains Mono"
+    ]
+  },
+  "lyricsFontSize": {
+    "type": "slider",
+    "min": 14,
+    "max": 34,
+    "step": 1,
+    "value": 20,
+    "text": "Kích thước chữ (px)"
+  },
+  "lyricsActiveBrightness": {
+    "type": "slider",
+    "min": 70,
+    "max": 100,
+    "step": 2,
+    "value": 100,
+    "text": "Độ sáng dòng hiện tại (%)"
+  },
+  "resetDefaults": {
+    "type": "button",
+    "value": "Khôi phục cài đặt mặc định",
+    "text": "Khôi phục mặc định"
+  }
+}

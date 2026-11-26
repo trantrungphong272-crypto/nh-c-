@@ -1,0 +1,6 @@
+{
+  "name": "Vòng Tròn Nhạc — Trình Hiển Thị Âm Thanh & Lời Bài Hát",
+  "description": "Hình nền động Circular Music Visualizer phiên bản Việt hóa tương thích Lively Wallpaper, hỗ trợ đồng hồ trung tâm, hiệu ứng Neon và đồng bộ lời bài hát LRC theo thời gian thực.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": []
+}

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vòng Tròn Nhạc — Lively Wallpaper</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: #07090e;
+        color: #f8fafc;
+        font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        user-select: none;
+      }
+      #visualizer-canvas {
+        position: fixed;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+      #center-hud {
+        position: fixed;
+        left: 50%;
+        top: 46%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        pointer-events: none;
+        width: min(38vmin, 320px);
+        z-index: 10;
+      }
+      #album-art {
+        width: 48px;
+        height: 48px;
+        border-radius: 9999px;
+        object-fit: cover;
+        margin: 0 auto 10px;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        display: none;
+      }
+      #clock-time {
+        font-size: clamp(2.5rem, 6vmin, 4rem);
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        font-variant-numeric: tabular-nums;
+        text-shadow: 0 0 24px rgba(34, 211, 238, 0.45);
+      }
+      #clock-date {
+        margin-top: 4px;
+        font-size: 0.875rem;
+        color: rgba(226, 232, 240, 0.9);
+      }
+      #track-info {
+        margin-top: 10px;
+      }
+      #track-title {
+        font-size: 0.9rem;
+        font-weight: 600;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      #track-artist {
+        font-size: 0.75rem;
+        color: rgba(203, 213, 225, 0.8);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      #lyrics-container {
+        position: fixed;
+        left: 50%;
+        top: calc(46% + min(24vmin, 215px));
+        transform: translateX(-50%);
+        width: min(92vw, 680px);
+        text-align: center;
+        pointer-events: none;
+        z-index: 10;
+      }
+      #lyric-prev,
+      #lyric-next {
+        font-size: 0.9rem;
+        color: rgba(248, 250, 252, 0.45);
+        margin: 4px 0;
+      }
+      #lyric-current {
+        font-size: 1.25rem;
+        font-weight: 600;
+        text-shadow: 0 0 18px rgba(34, 211, 238, 0.4);
+        transition: opacity 0.25s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="visualizer-canvas"></canvas>
+    <div id="center-hud">
+      <img id="album-art" alt="Ảnh bìa album" />
+      <div id="clock-time">00:00</div>
+      <div id="clock-date"></div>
+      <div id="track-info">
+        <div id="track-title"></div>
+        <div id="track-artist"></div>
+      </div>
+    </div>
+    <div id="lyrics-container">
+      <div id="lyric-prev"></div>
+      <div id="lyric-current"></div>
+      <div id="lyric-next"></div>
+    </div>
+    <script src="./lively-app.js"></script>
+  </body>
+</html>
